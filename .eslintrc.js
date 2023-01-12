@@ -9,7 +9,9 @@ module.exports = {
   globals: {
     NODE_ENV: 'readonly',
   },
+  // 0 - OK, 1 - WARN, 2 - ERROR
   rules: {
-    // 0 - OK, 1 - WARN, 2 - ERROR
+    sourceType: 'module',
+    allowImportExportEverywhere: 0,
   },
 };

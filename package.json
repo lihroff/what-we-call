@@ -1,40 +1,34 @@
 {
-  "name": "@mozleo/node-starter",
-  "version": "0.0.0",
-  "description": "<Personal boilerplate to kickstart creating a Node.js module/repo>",
-  "repository": "<https://https://github.com/lihroff/node-starter>",
-  "author": "<Tommy Lee>",
+  "name": "what-we-call",
+  "version": "0.0.1",
+  "description": "Quick sight for the abbr.",
+  "repository": "https://github.com/lihroff/what-we-call",
   "license": "MIT",
+  "type": "module",
+  "bin": {
+    "wwc": "src/index.js"
+  },
   "scripts": {
+    "start": "node --no-warnings src/index.js",
     "test": "jest",
     "lint": "eslint --cache --fix --ext .js src *test*"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.0",
+    "ora": "^6.1.2"
+  },
   "devDependencies": {
     "husky": "^3.0.4",
     "jest": "^24.9.0",
     "lint-staged": "^9.2.3",
     "prettier": "^1.18.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint",
-    "*.{js,jsx,ts,tsx,json,less}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "keywords": [
-    "boilerpalte",
-    "template",
-    "starter",
-    "node"
+    "cli",
+    "abbr"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=16.19.0"
   }
 }
