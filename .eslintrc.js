@@ -1,5 +1,5 @@
 // https://cn.eslint.org/docs/user-guide/configuring
-module.exports = {
+export default {
   extends: ['eslint:recommended'],
   env: {
     es6: true,

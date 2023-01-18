@@ -2,3 +2,4 @@ loader = url
 file =
 url = https://my-json-server.typicode.com/lihroff/MyJSONServer/lists
 case_ignore = true
+topic = 

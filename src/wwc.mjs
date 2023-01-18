@@ -1,11 +1,11 @@
-import readline from 'readline';
+import readline from "readline";
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout,
+  output: process.stdout
 });
 
-const worldSplit = (input = '') => input.trim().split(/ +/);
+const worldSplit = (input = "") => input.trim().split(/ +/);
 
 const wwc = abbr => () => {
   const search = () => {
@@ -19,7 +19,7 @@ const wwc = abbr => () => {
         if (val) {
           console.log(`[\x1b[36m${key}\x1b[0m]: \x1b[36m${val}\x1b[0m`);
         } else {
-          console.log(`Not found the Abbr: ${key}`);
+          console.log(`[\x1b[31m${key}\x1b[0m]: \x1b[31mNot found\x1b[0m`);
         }
       });
 
