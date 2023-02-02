@@ -1,6 +1,6 @@
 {
   "name": "what-we-call",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Quick sight for the abbr.",
   "repository": "https://github.com/lihroff/what-we-call",
   "license": "MIT",
@@ -11,7 +11,8 @@
   "scripts": {
     "start": "node --no-warnings src/index.js",
     "test": "jest",
-    "lint": "eslint --cache --fix --ext .js src *test*"
+    "lint": "eslint --cache --fix --ext .js src *test*",
+    "postinstall": "node ./script/postinstall.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
